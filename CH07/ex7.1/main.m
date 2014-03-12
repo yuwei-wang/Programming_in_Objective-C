@@ -30,6 +30,26 @@ int main(int argc, char * argv[])
 		resultFraction = [aFraction subtract: bFraction];
 		[resultFraction print];
 		NSLog(@"\n\n");
+
+		// multiply
+		[aFraction print];
+		NSLog(@"*");
+		[bFraction print];
+		NSLog(@"=");
+
+		resultFraction = [aFraction multiply: bFraction];
+		[resultFraction print];
+		NSLog(@"\n\n");
+		
+		// divide
+		[aFraction print];
+		NSLog(@"/");
+		[bFraction print];
+		NSLog(@"=");
+
+		resultFraction = [aFraction divide: bFraction];
+		[resultFraction print];
+		NSLog(@"\n\n");
 	}
 
 	return 0;

@@ -10,7 +10,7 @@
 //-(void) add: (Fraction *) f;
 -(Fraction *) add: (Fraction *) f;
 -(Fraction *) subtract: (Fraction *) f;
-//-(Fraction *) multiply: (Fraction *) f;
-//-(Fraction *) divide: (Fractieon *) f;
+-(Fraction *) multiply: (Fraction *) f;
+-(Fraction *) divide: (Fraction *) f;
 -(void) reduce;
 @end

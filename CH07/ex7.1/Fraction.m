@@ -56,6 +56,39 @@
 	return result;
 }
 
+// multiply a Fraction to the receiver
+-(Fraction *) multiply: (Fraction *) f
+{
+	// To multiply two Fractions:
+	// a/b * c/d = (a * C) / (b * d)
+
+	// result will store the result of the multiply
+	Fraction *result = [[Fraction alloc] init];
+	result.numerator = numerator * f.numerator;
+	result.denominator = denominator * f.denominator;
+
+	[result reduce];
+
+	return result; 
+}
+
+// divide a Fraction to the receiver
+-(Fraction *) divide: (Fraction *) f
+{
+	// To divide two Fraction
+	// (a/b) / (c/d) = a/b * d/c = (a * d) / (b * c)
+
+	// result will storethe result of the divide
+	Fraction *result = [[Fraction alloc] init];
+
+	result.numerator = numerator * f.denominator;
+	result.denominator = denominator * f.numerator;
+
+	[result reduce];
+
+	return result;
+}
+
 -(void) reduce
 {
 	int u = numerator;
